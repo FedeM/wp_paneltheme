@@ -16,18 +16,18 @@
 				},
 				{
 					"slug": "primary",
-					"color": "#b91c1c",
+					"color": "#3E509D",
 					"name": "Primary"
 				},
 				{
-					"slug": "secondary",
-					"color": "#15803d",
-					"name": "Secondary"
+					"slug": "primary-dark",
+					"color": "#1A2862",
+					"name": "Primary Dark"
 				},
 				{
-					"slug": "tertiary",
-					"color": "#0369a1",
-					"name": "Tertiary"
+					"slug": "secondary",
+					"color": "#9FCE00",
+					"name": "Secondary"
 				}
 			]
 		},
