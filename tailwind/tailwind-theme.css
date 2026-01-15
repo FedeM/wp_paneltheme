@@ -24,6 +24,7 @@
     --color-secondary: var(--wp--preset--color--secondary);
 	--color-secondary: var(--wp--preset--color--secondary);
 	--color-tertiary: var(--wp--preset--color--tertiary);
+	--color-gray: var(--wp--preset--color--gray);
 	--container-content: var(--wp--style--global--content-size);
 	--container-wide: var(--wp--style--global--wide-size);
 

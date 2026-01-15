@@ -28,6 +28,11 @@
 					"slug": "secondary",
 					"color": "#9FCE00",
 					"name": "Secondary"
+				},
+				{
+					"slug": "gray",
+					"color": "#E8EDEF66",
+					"name": "Gray"
 				}
 			]
 		},
