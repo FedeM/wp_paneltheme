@@ -19,7 +19,7 @@
 
 
 <nav class="absolute left-0 w-full h-[128px] z-30">
-    <div class="bg-[var(--color-primary)]/90 h-full">
+    <div class="h-full">
         <div class="max-w-7xl mx-auto px-6 h-full flex items-center justify-end">
             <?php wp_nav_menu([
                 'menu' => 'Menú',

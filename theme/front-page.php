@@ -10,7 +10,7 @@ get_template_part('template-parts/layout/header', 'theme');
 ?>
 
 <main class="min-h-screen">
-    
+    <?php get_template_part('template-parts/layout/slider', 'content'); ?>
 </main>
 
 <?php
