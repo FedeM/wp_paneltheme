@@ -9,3 +9,7 @@
 body {
 	@apply bg-background text-foreground font-sans;
 }
+
+.menu-contacto a {
+  @apply text-[var(--color-secondary)];
+}
