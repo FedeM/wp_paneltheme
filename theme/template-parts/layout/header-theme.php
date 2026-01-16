@@ -1,5 +1,5 @@
 <div class="bg-[var(--color-secondary)] h-[70px]">
-    <div class="max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
+    <div class="container mx-auto max-w-[1300px] px-6 h-full flex items-center justify-between">
 
         <a href="mailto:dominio@dominio.es" class="flex items-center gap-2 text-white text-[15px]">
             <img src="<?php echo get_template_directory_uri(); ?>/images/Email.svg" class="w-4 h-4" alt="">
@@ -20,7 +20,7 @@
 
 <nav class="absolute left-0 w-full h-[128px] z-30">
     <div class="h-full">
-        <div class="max-w-7xl mx-auto px-6 h-full flex items-center justify-end">
+        <div class="container mx-auto max-w-[1300px] px-6 h-full flex items-center justify-end">
             <?php wp_nav_menu([
                 'menu' => 'Menú',
                 'container' => false,

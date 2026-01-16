@@ -19,10 +19,10 @@
 	</div>
 
 	<!-- Flechas (HTML) -->
-	<button class="absolute top-1/2 left-[18%] transform -translate-y-1/2 z-20 w-[58px] h-[58px] rounded-full flex items-center justify-center text-white bg-[var(--color-secondary)] text-[26px] font-bold cursor-pointer transition">
+	<button class="absolute top-1/2 left-[17%] sm:left-[2%] transform -translate-y-1/2 z-20 w-[58px] h-[58px] rounded-full flex items-center justify-center text-white bg-[var(--color-secondary)] text-[26px] font-bold cursor-pointer transition">
 		&larr;
 	</button>
-	<button class="absolute top-1/2 right-[18%] transform -translate-y-1/2 z-20 w-[58px] h-[58px] rounded-full flex items-center justify-center text-white bg-[var(--color-secondary)] text-[26px] font-bold cursor-pointer transition">
+	<button class="absolute top-1/2 right-[17%] sm:right-[2%] transform -translate-y-1/2 z-20 w-[58px] h-[58px] rounded-full flex items-center justify-center text-white bg-[var(--color-secondary)] text-[26px] font-bold cursor-pointer transition">
 		&rarr;
 	</button>
 </div>

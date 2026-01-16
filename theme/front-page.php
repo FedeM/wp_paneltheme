@@ -13,8 +13,8 @@ get_template_part('template-parts/layout/header', 'theme');
     <?php get_template_part('template-parts/layout/slider', 'content'); ?>
 
     <!-- ¿Por qué nuestro PANEL SÁNDWICH? -->
-    <div class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-6">
+    <section class="py-24 bg-white">
+        <div class="container mx-auto max-w-[1300px]">
             <!-- Título -->
             <div class="text-center mb-24">
                 <h2 class="text-[var(--color-primary)] text-3xl md:text-4xl font-semibold mb-2">¿Por qué nuestro <span class="text-[var(--color-secondary)] relative inline-block">PANEL SÁNDWICH
@@ -45,8 +45,8 @@ get_template_part('template-parts/layout/header', 'theme');
                 </div>
             </div>
         </div>
-    </div>
-
+    </section>
+    
 </main>
 
 <?php
