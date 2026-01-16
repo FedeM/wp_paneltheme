@@ -13,3 +13,8 @@ body {
 .menu-contacto a {
   @apply text-[var(--color-secondary)];
 }
+
+.wpcf7-spinner {
+  position: absolute;
+}
+
