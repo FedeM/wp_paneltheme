@@ -24,22 +24,22 @@ get_template_part('template-parts/layout/header', 'theme');
 
             <!-- Box -->
             <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 md:gap-8 xl:gap-12 justify-items-center">
-                <div class="bg-[var(--color-gray)] p-5 rounded-lg flex flex-row items-center gap-3 w-[312px] h-[129px]">
+                <div class="bg-[var(--color-gray)] p-5 rounded-lg flex flex-row items-center gap-3 w-full max-w-[312px] h-[129px]">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/icon-atencion.svg" alt="Atención real y personalizada" class="w-16 h-16 flex-shrink-0">
                     <div class="text-[var(--color-primary)] text-base font-semibold leading-tight">Atención <br> real y personalizada</div>
                 </div>
 
-                <div class="bg-[var(--color-gray)] p-5 rounded-lg flex flex-row items-center gap-3 w-[312px] h-[129px]">
+                <div class="bg-[var(--color-gray)] p-5 rounded-lg flex flex-row items-center gap-3 w-full max-w-[312px] h-[129px]">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/icon-asesoramiento.svg" alt="Asesoramiento técnico especializado" class="w-16 h-16 flex-shrink-0">
                     <div class="text-[var(--color-primary)] text-base font-semibold leading-tight">Asesoramiento <br> técnico especializado</div>
                 </div>
 
-                <div class="bg-[var(--color-gray)] p-5 rounded-lg flex flex-row items-center gap-3 w-[312px] h-[129px]">
+                <div class="bg-[var(--color-gray)] p-5 rounded-lg flex flex-row items-center gap-3 w-full max-w-[312px] h-[129px]">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/icon-logistica.svg" alt="Logística eficiente y adaptable" class="w-16 h-16 flex-shrink-0">
                     <div class="text-[var(--color-primary)] text-base font-semibold leading-tight">Logística <br> eficiente y adaptable</div>
                 </div>
 
-                <div class="bg-[var(--color-gray)] p-5 rounded-lg flex flex-row items-center gap-3 w-[312px] h-[129px]">
+                <div class="bg-[var(--color-gray)] p-5 rounded-lg flex flex-row items-center gap-3 w-full max-w-[312px] h-[129px]">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/icon-calidad.svg" alt="Compromiso con la calidad" class="w-16 h-16 flex-shrink-0">
                     <div class="text-[var(--color-primary)] text-base font-semibold leading-tight">Compromiso con la calidad</div>
                 </div>
@@ -122,7 +122,7 @@ get_template_part('template-parts/layout/header', 'theme');
             </div>
 
             <!-- Items -->
-            <div class="lg:bg-[var(--color-gray)] px-6 rounded-lg mt-10 lg:max-h-[112px]">
+            <div class="lg:bg-[var(--color-gray)] px-6 rounded-lg mt-10 h-auto lg:max-h-[112px]">
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
 
                     <div class="bg-[var(--color-gray)] flex items-center gap-3 p-4 relative">
@@ -212,7 +212,7 @@ get_template_part('template-parts/layout/header', 'theme');
 
             <!-- Contenedor de reseñas -->
             <div class="relative">
-                <div class="flex reviews overflow-x-auto gap-5 pb-6 snap-x snap-mandatory scrollbar-hide">
+                <div class="flex reviews overflow-x-auto gap-5 px-6 pb-6 snap-x snap-mandatory scrollbar-hide">
                     <?php
                     $reviews = [
                         [

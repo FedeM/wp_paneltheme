@@ -16,30 +16,30 @@ for ($i = 1; $i <= 5; $i++) {
 }
 ?>
 
-<div class="flex-shrink-0 w-full mx-6 sm:mx-0 sm:w-[422px] h-[274px] bg-white p-6 rounded-lg shadow-sm snap-start">
-  <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
+<div class="flex-shrink-0 w-full sm:w-[calc(50%-10px)] lg:w-[422px] h-auto min-h-[274px] bg-white p-6 rounded-lg shadow-sm snap-center sm:snap-start lg:snap-center">
+  <div class="flex flex-col items-center gap-4 lg:gap-4 lg:grid lg:grid-cols-3 mb-4 w-full">
 
-    <div class="sm:col-span-2 flex items-start gap-3">
+    <div class="lg:col-span-2 flex flex-col lg:flex-row items-center lg:items-start gap-2 lg:gap-3">
       <div class="relative">
         <img 
           src="<?php echo esc_url($image); ?>" 
           alt="<?php echo esc_attr($name); ?>" 
           class="w-12 h-12 rounded-full object-cover"
         />
-        <div class="hidden sm:block absolute -right-3 top-0 bottom-0 w-[2px] bg-[var(--color-secondary)]"></div>
+        <div class="hidden lg:block absolute -right-3 top-0 bottom-0 w-[2px] bg-[var(--color-secondary)]"></div>
       </div>
-
-      <h3 class="font-semibold ml-3 text-[var(--color-primary)] self-center"><?php echo esc_html($name); ?></h3>
+      
+      <h3 class="font-semibold text-[var(--color-primary)] lg:ml-3 lg:self-center"><?php echo esc_html($name); ?></h3>
     </div>
 
-    <div class="sm:col-span-1 flex flex-col justify-end gap-1">
-      <div class="flex items-center gap-1 text-right text-2xl text-[#ffc800]">
+    <div class="lg:col-span-1 flex flex-col items-center lg:items-end lg:justify-end gap-1">
+      <div class="flex items-center justify-center lg:justify-end gap-1 text-2xl text-[#ffc800]">
         <?php echo $stars; ?>
       </div>
-      <p class="text-[#1F1E1780] sm:text-right sm:pr-4 text-xs"><?php echo esc_html($date); ?></p>
+      <p class="text-[#1F1E1780] text-xs lg:text-right lg:pr-4"><?php echo esc_html($date); ?></p>
     </div>
 
   </div>
 
-  <p class="text-[#4F5665] mt-2 sm:mt-10 leading-relaxed"><?php echo esc_html($review); ?></p>
+  <p class="text-[#4F5665] mt-2 lg:mt-10 leading-relaxed text-center lg:text-left"><?php echo esc_html($review); ?></p>
 </div>
