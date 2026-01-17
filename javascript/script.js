@@ -45,3 +45,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	showSlide(currentIndex);
 });
+
+/**
+ * Funcionalidad básica para un carrusel simple
+ */
+document.addEventListener('DOMContentLoaded', function () {
+	const carousel = document.querySelector('.reviews.overflow-x-auto');
+	const prevBtnCarrousel = document.querySelector('[data-prev]');
+	const nextBtnCarrousel = document.querySelector('[data-next]');
+	
+	prevBtnCarrousel.addEventListener('click', () => {
+		carousel.scrollBy({ left: -422, behavior: 'smooth' });
+	});
+
+	nextBtnCarrousel.addEventListener('click', () => {
+		carousel.scrollBy({ left: 422, behavior: 'smooth' });
+	});
+});
