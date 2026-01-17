@@ -63,7 +63,7 @@ get_template_part('template-parts/layout/header', 'theme');
     </section>
 
     <!-- Pide Presupuesto -->
-    <section class="pt-24 bg-[var(--color-gray-dark)]">
+    <section id="contacto" class="pt-24 bg-[var(--color-gray-dark)]">
         <div class="container mx-auto max-w-[1300px]">
             <!-- Título -->
             <div class="text-center mb-24">
@@ -107,7 +107,7 @@ get_template_part('template-parts/layout/header', 'theme');
                     </p>
 
                     <!-- Botón contacto -->
-                    <a href="#" class="inline-block px-8 py-3 mt-3 mx-auto md:mx-0 justify-center bg-white text-[var(--color-primary)] border-2 border-[var(--color-secondary)] font-bold rounded-full hover:bg-gray-50 transition">
+                    <a href="#contacto" class="inline-block px-8 py-3 mt-3 mx-auto md:mx-0 justify-center bg-white text-[var(--color-primary)] border-2 border-[var(--color-secondary)] font-bold rounded-full hover:bg-gray-50 transition">
                         CONTACTA CON NOSOTROS
                     </a>
 
@@ -258,7 +258,7 @@ get_template_part('template-parts/layout/header', 'theme');
                 <p class="mt-2">Además, disponemos de un <span class="font-bold">departamento técnico</span> para resolver sus dudas</p>
                 <p class="mt-2">y calculamos los elementos necesarios para su correcto montaje e instalación.</p>
 
-                <a href="#" class="inline-block px-8 py-3 mt-10 bg-white text-[var(--color-primary)] border-2 border-[var(--color-secondary)] font-bold rounded-full hover:bg-gray-50 transition">
+                <a href="#contacto" class="inline-block px-8 py-3 mt-10 bg-white text-[var(--color-primary)] border-2 border-[var(--color-secondary)] font-bold rounded-full hover:bg-gray-50 transition">
                     CONTACTA CON NOSOTROS
                 </a>
             

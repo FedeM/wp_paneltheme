@@ -13,7 +13,7 @@
             </div>
 		</div>
 
-		<a href="#" class="inline-block px-8 py-3 mt-20 md:mt-24 bg-white text-[var(--color-primary)] border-2 border-[var(--color-secondary)] font-bold rounded-full hover:bg-gray-50 transition">
+		<a href="#contacto" class="inline-block px-8 py-3 mt-20 md:mt-24 bg-white text-[var(--color-primary)] border-2 border-[var(--color-secondary)] font-bold rounded-full hover:bg-gray-50 transition">
             CONTACTA CON NOSOTROS
         </a>
 	</div>
