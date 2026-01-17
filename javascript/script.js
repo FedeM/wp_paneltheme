@@ -62,3 +62,19 @@ document.addEventListener('DOMContentLoaded', function () {
 		carousel.scrollBy({ left: 422, behavior: 'smooth' });
 	});
 });
+
+/**
+ * Funcionalidad del Menú Hamburguesa
+ */
+document.addEventListener('DOMContentLoaded', function () {
+	const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+	const mobileMenu = document.getElementById('mobile-menu');
+
+	if (mobileMenuBtn && mobileMenu) {
+		mobileMenuBtn.addEventListener('click', () => {
+			mobileMenu.classList.toggle('hidden');
+			mobileMenuBtn.classList.toggle('text-white');
+			mobileMenuBtn.classList.toggle('text-[var(--color-primary)]');
+		});
+	}
+});
