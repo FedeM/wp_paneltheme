@@ -82,6 +82,7 @@ get_template_part('template-parts/layout/header', 'theme');
         <div class="container mx-auto max-w-[1300px]">
 
             <div class="flex flex-col md:flex-row items-center gap-10 mb-12">
+                <!-- Imagen -->
                 <div class="flex justify-center md:justify-start w-full md:w-4/12">
                     <img 
                     src="<?php echo get_template_directory_uri(); ?>/images/image_profesionales.png"
@@ -91,8 +92,10 @@ get_template_part('template-parts/layout/header', 'theme');
                 </div>
 
                 <div class="relative w-full px-8 md:px-0 md:w-8/12 md:text-left">
+                    <!-- Título -->
                     <h2 class="text-[var(--color-primary)] text-3xl md:text-4xl font-semibold mb-10">Profesionales y <span class="text-[var(--color-secondary)] relative inline-block">CERCANOS</span></h2>
 
+                    <!-- Texto -->
                     <p class="text-gray-600 mb-10 lg:max-w-[600px]">
                     Por eso, en <strong>XXXXX</strong> estamos en constante desarrollo en los materiales y técnicas de la construcción modular prefabricada.
                     </p>
@@ -103,11 +106,13 @@ get_template_part('template-parts/layout/header', 'theme');
                     Nos encanta asesorarte e intentar dar solución a tus inquietudes y proyectos y para ello creemos en el trato personal y humano para poder resolver todas tus dudas.
                     </p>
 
+                    <!-- Botón contacto -->
                     <a href="#" class="inline-block px-8 py-3 mt-3 mx-auto md:mx-0 justify-center bg-white text-[var(--color-primary)] border-2 border-[var(--color-secondary)] font-bold rounded-full hover:bg-gray-50 transition">
                         CONTACTA CON NOSOTROS
                     </a>
 
-                    <div class="hidden lg:block absolute -top-1 right-0">
+                    <!-- Flechita verde -->
+                    <div class="hidden xl:block absolute -top-1 right-0">
                         <img 
                         src="<?php echo get_template_directory_uri(); ?>/images/vector_profesionales.png" 
                         alt="Flecha verde decorativa"
@@ -116,7 +121,8 @@ get_template_part('template-parts/layout/header', 'theme');
                 </div>
             </div>
 
-            <div class="lg:bg-[var(--color-gray)] px-6 rounded-lg mt-10 max-h-[112px]">
+            <!-- Items -->
+            <div class="lg:bg-[var(--color-gray)] px-6 rounded-lg mt-10 lg:max-h-[112px]">
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
 
                     <div class="bg-[var(--color-gray)] flex items-center gap-3 p-4 relative">
@@ -168,6 +174,77 @@ get_template_part('template-parts/layout/header', 'theme');
 
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Reseñas de clientes -->
+    <section class="py-24 bg-[var(--color-gray)]">
+        <div class="container mx-auto max-w-[1300px]">
+
+            <!-- Contenedor principal: organiza título y flechas -->
+            <div class="relative flex flex-col items-center mb-10">
+
+                <!-- Título: siempre centrado visualmente -->
+                <h2 class="text-[var(--color-primary)] text-3xl md:text-4xl font-semibold text-center w-full">
+                    Reseñas de <span class="text-[var(--color-secondary)]">CLIENTES</span>
+                </h2>
+
+                <!-- Flechas: debajo en mobile, a la derecha en desktop -->
+                <div class="flex gap-4 justify-center mt-6 md:mt-0 md:absolute md:right-0 md:top-1/2 md:-translate-y-1/2">
+                    <!-- Flecha izquierda -->
+                    <button data-prev class="w-[58px] h-[58px] bg-white border-2 border-[var(--color-primary)] rounded-full flex items-center justify-center hover:bg-[var(--color-primary)] hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 12H5" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 19l-7-7 7-7" />
+                    </svg>
+                    </button>
+
+                    <!-- Flecha derecha -->
+                    <button data-next class="w-[58px] h-[58px] bg-[var(--color-primary)] text-white rounded-full flex items-center justify-center hover:bg-[var(--color-primary-dark)] transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 5l7 7-7 7" />
+                    </svg>
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Contenedor de reseñas -->
+            <div class="relative">
+                <div class="flex reviews overflow-x-auto gap-5 pb-6 snap-x snap-mandatory scrollbar-hide">
+                    <?php
+                    $reviews = [
+                        [
+                            'image' => get_template_directory_uri().'/images/cliente.png',
+                            'name' => 'Carlos Javier',
+                            'rating' => 5,
+                            'date' => '30/01/2024',
+                            'review' => 'Me considero un cliente satisfecho. Me asesoraron como ninguna otra empresa. Cumplieron en los tiempos y excelente trato humano.'
+                        ],
+                        [
+                            'image' => get_template_directory_uri().'/images/cliente.png',
+                            'name' => 'Carlos Javier',
+                            'rating' => 3,
+                            'date' => '30/01/2024',
+                            'review' => 'Atención muy buena por parte del comercial y entrega muy rápida.'
+                        ],
+                        [
+                            'image' => get_template_directory_uri().'/images/cliente.png',
+                            'name' => 'Carlos Javier',
+                            'rating' => 5,
+                            'date' => '30/01/2024',
+                            'review' => 'Necesitaba unos paneles para un trabajo en mi casa, fui de forma particular y me atendieron muy bien y me explicaron todo al detalle, acabe comprando lo que necesita y sin duda volveré.'
+                        ]
+                    ];
+
+                    foreach ($reviews as $review) {
+                        get_template_part( 'template-parts/layout/review', 'content', $review );
+                    }
+                    ?>
+                </div>
+            </div>
+
         </div>
     </section>
 </main>
