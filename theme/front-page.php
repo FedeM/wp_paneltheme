@@ -272,6 +272,9 @@ get_template_part('template-parts/layout/header', 'theme');
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <?php get_template_part( 'template-parts/layout/footer', 'content' ); ?>
 </main>
 
 <?php
